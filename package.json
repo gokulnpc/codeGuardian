@@ -1,0 +1,103 @@
+{
+  "name": "codeguardian",
+  "displayName": "CodeGuardian",
+  "description": "Real-time code security analysis using local LLMs",
+  "version": "0.0.8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gokulnpc/codeGuardian.git"
+  },
+  "publisher": "gokulnpc",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Linters",
+    "Security",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:python",
+    "onLanguage:java",
+    "onLanguage:cpp"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeguardian.analyzeFile",
+        "title": "CodeGuardian: Analyze Current File"
+      },
+      {
+        "command": "codeguardian.analyzeWorkspace",
+        "title": "CodeGuardian: Analyze Workspace"
+      }
+    ],
+    "configuration": {
+      "title": "CodeGuardian",
+      "properties": {
+        "codeguardian.analyzeOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically analyze files when saved"
+        },
+        "codeguardian.serverUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the CodeGuardian analysis server"
+        },
+        "codeguardian.enabledLanguages": {
+          "type": "array",
+          "default": [
+            "javascript",
+            "typescript",
+            "python",
+            "java",
+            "cpp"
+          ],
+          "description": "Languages that CodeGuardian should analyze"
+        }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codeguardian.analyzeFile",
+          "group": "codeguardian"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
