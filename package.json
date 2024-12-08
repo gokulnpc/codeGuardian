@@ -2,7 +2,8 @@
   "name": "codeguardian",
   "displayName": "CodeGuardian",
   "description": "Real-time code security analysis using local LLMs",
-  "version": "0.0.8",
+  "version": "0.0.9",
+  "icon": "assets/images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/gokulnpc/codeGuardian.git"
