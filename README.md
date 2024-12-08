@@ -69,7 +69,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-- [Gokuleshwaran Narayanan](https://github.com/gokuleshwaran) - Computer Scientist
+- [Gokuleshwaran Narayanan](https://github.com/gokulnpc) - Computer Scientist
 - [Adithyah Nair](https://github.com/adithyahnair) - Computer Scientist
 
 ## 📬 Contact
