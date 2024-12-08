@@ -1,8 +1,5 @@
 # CodeGuardian
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg" width="120" alt="CodeGuardian Logo" />
-  
   <h3>Your AI-Powered Code Security Companion</h3>
   <p>Detect vulnerabilities instantly, secure your code effortlessly.</p>
 </div>
