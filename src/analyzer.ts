@@ -6,7 +6,7 @@ export class SecurityAnalyzer {
   private diagnosticCollection: vscode.DiagnosticCollection;
   private apiUrl = "http://localhost:1234/v1/chat/completions";
   // private defaultModel = "llama-3.2-3b-instruct";
-  private defaultModel = "qwen2.5-coder-7b-instruct";
+  private defaultModel = "yi-coder-9b-chat";
 
   constructor() {
     this.diagnosticCollection =
