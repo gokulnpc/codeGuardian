@@ -52,9 +52,13 @@ CodeGuardian seamlessly integrates with your development workflow:
 - PHP
 - And more...
 
-## 📚 Documentation
+## 🚀 Navigate the Website
 
-For detailed documentation and usage guidelines, visit our [Wiki](https://github.com/codeguardian/docs/wiki).
+1. CodeGuardian Demo
+   - https://www.youtube.com/watch?v=1cz23dexJ-A
+
+2. CodeGuardian GitHub Link
+   - https://github.com/gokulnpc/codeGuardian
 
 ## 🤝 Contributing
 
@@ -71,8 +75,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-For support or inquiries, reach out to us on [GitHub](https://github.com/adithyahnair) or [LinkedIn](https://www.linkedin.com/in/adithyahnair).
-
+For support or inquiries:
+- Website: [codeguardianlmstudio.netlify.app](https://codeguardianlmstudio.netlify.app/)
+- LinkedIn: [Adithyah Nair](https://www.linkedin.com/in/adithyahnair) [Gokuleshwaran Narayanan](https://github.com/gokulnpc) 
 ---
 
 <div align="center">
