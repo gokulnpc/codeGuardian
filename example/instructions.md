@@ -3,11 +3,6 @@
 ## Step 1: Install Requirements
 
 1. Install **Visual Studio Code** if not already installed.
-2. Install **Python** (ensure `python --version` works in the terminal).
-3. Install Flask using:
-   ```sh
-   pip install flask
-   ```
 
 ## Step 2: Set Up LMStudio
 
